@@ -21,5 +21,36 @@ int main() {
 
     sum();
     
+    // Float, double and long double Literals
+    // By default decimal value (33.3) is count as 'double' so for float we use (33.3f)
+    float d = 33.3f;
+    long double e = 33.3;
+    cout<<"The value of d is "<<d<<endl<<"The value of e is "<<e<<endl;
+    cout<<"The size of 33.3 is "<<sizeof(33.3)<<endl;
+    cout<<"The size of 33.3f is "<<sizeof(33.3f)<<endl;
+    cout<<"The size of 33.3l is "<<sizeof(33.3l)<<endl;
+
+    // Reference Variables
+    float x = 455;
+    float &y = x;
+
+    cout<<x<<endl;
+    cout<<y<<endl;
+
+    // Typecasting
+    int t = 55;
+    float u = 44.44;
+    cout<<"The value of t is "<<(float)t<<endl;
+    cout<<"The value of t is "<<float(t)<<endl;
+
+    // When you convert float to integer that digits after decimal will be removed
+    cout<<"The value of u is "<<(int)u<<endl;
+    cout<<"The value of u is "<<int(u)<<endl;
+    
+    // lets take example 99.99 than the value after integer typecast will be 99
+    // It will not be 100 (round of)
+    float v = 99.99;
+    cout<<"The value of 99.99 after Interger Typecast is "<<int(v)<<endl;
+    
     return 0;
 }
