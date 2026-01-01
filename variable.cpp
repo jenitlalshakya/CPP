@@ -3,7 +3,7 @@ using namespace std;
 
 int glo = 6;    // Global variable
 void sum() {
-    cout<<"This is global variable "<<glo;  // Here global variable have high preference. (Global variable dominate Local variable)
+    cout<<"This is global variable "<<glo<<endl;  // Here global variable have high preference. (Global variable dominate Local variable)
 }
 
 int main() {
@@ -20,5 +20,6 @@ int main() {
     cout<<"This is how you access global variable using scope resolution operator "<<::glo<<endl;   // scope resolution operator is '::'
 
     sum();
+    
     return 0;
 }
