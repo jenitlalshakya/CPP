@@ -17,6 +17,7 @@ int main() {
     cout<<"The value of PI is "<<pi<<".\n";
     cout<<"The character is "<<c<<".\n";
     cout<<"This is local variable "<<glo<<" "<<is_true<<"\n";  // Here Local variable have high preference. (Local vaiable dominate Global variable)
+    cout<<"This is how you access global variable using scope resolution operator "<<::glo<<endl;   // scope resolution operator is '::'
 
     sum();
     return 0;
