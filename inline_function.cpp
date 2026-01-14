@@ -2,6 +2,9 @@
 using namespace std;
 
 inline int product(int a, int b) {  // inline function copies the output to the function direct so whenever inline function is called it directly provided value without running function evertime
+    // Not recommanded to use below lines with inline function
+    // static int c = 0;
+    // c = c + 1;
     return a * b;
 }
 
